@@ -1,0 +1,81 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 1210px;
+ background-color: #4A689E;
+ margin: 20px 0px 0px 20px;
+ padding: 20px 10px 20px 20px;
+}
+#header{
+ height: 50px;
+ width: 1215px;
+ background-color: red;
+ margin-bottom: 15px;
+ margin-top: -10px;
+ padding-top: 10px;
+ margin-left: -10px;
+ text-indent: 20px;
+ font-size: 30px;
+ font-family: "Grill Sans", serif;
+ color: #ccefff;
+ border: 2px solid red;
+ border-radius: 10px;
+}
+#navigation{
+ height: 250px;
+ width: 200px;
+ background-color: #178C97;
+ display: inline-block;
+ vertical-align: top;
+ text-decoration: underline;
+ padding-top: 15px;
+ padding-left: 5px;
+ margin-left: -10px;
+ border-radius: 10px;
+ color: #0EDCF0;
+}
+#orderedlist{
+	margin: 0px 0px 0px 30px;
+}
+#list{
+	margin: 0px 0px 0px 20px;
+}
+#home{
+	margin: 0px 0px 0px 13px;
+}
+#main_content{
+ height: 420px;
+ width: 1000px;
+ background-color: #4D4D4D;
+ display: inline-block;
+ border-radius: 10px;
+ margin: 0px 0px 0px 10px;
+}
+#h1{
+	font-size: 13px;
+	margin: 22px 0px 0px 10px;
+	color: white;
+	padding: 5px 5px 5px 10px;
+}
+#h2{
+	font-size: 9px;
+	padding: 10px;
+	margin: 0px 0px 0px 10px;
+	color: white;
+}
+#list1{
+	padding: 0px 40px 0px 30px;
+	color: white;
+	margin: 0px 0px 0px 10px;
+}
+#url{
+	height: 35px;
+	width: 1190px;
+	color: white;
+	background-color: grey;
+	margin: 15px -10px -10px -10px;
+	padding: 20px 10px 5px 20px;
+	border-radius: 20px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>debug</title>
+    <script type="text/javascript">
+function ninjaConstructor(name, health, speed, strength) {
+    this.name = name;
+    this.health = health;
+    this.speed = speed;
+    this.strength = strength;
+    this.sayName = function() {
+        console.log("My ninja name is " + this.name + "!");
+    }
+    this.showStats = function() {
+        console.log("Name: " + this.name + ", Health: " + this.health + ", Speed: " + this.speed + ", Strength: " + this.strength);
+    }
+    this.punch = function(enemy) {
+        enemy.health -=  (5 * (this.strength));
+        console.log(this.name + " was punched by " + enemy.name + " and lost 5 Health!" + enemy.health);
+    }
+    this.kick = function(enemy) {
+        enemy.health -= (15 * (this.strength));
+        console.log(enemy.name + " was kicked by " + this.name + " and lost 15 Health!" + enemy.health);
+    }
+}
+// the 'new' keyword causes our constructor to return the object we expected.
+var hyabusa = new ninjaConstructor('Hyabusa', 100, 3, 3);
+var redNinja = new ninjaConstructor('RedNinja', 100, 2, 5.5);
+var blueNinja = new ninjaConstructor('BlueNinja', 100, 6, 2);
+hyabusa.sayName();
+hyabusa.showStats();
+redNinja.punch(blueNinja);
+blueNinja.kick(redNinja);
+console.log(hyabusa);
+console.log(redNinja);
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+

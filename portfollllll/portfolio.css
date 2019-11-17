@@ -1,0 +1,209 @@
+.container{
+ width: 925px;
+ height: auto;
+ background: radial-gradient(#370B4F, #693D81);
+}
+
+	.container .header{
+		width: 924.5px;
+		height: auto;
+		background-color: #F5F5F5;
+	}
+		.container .header h1{
+			display: inline-block;
+			width: 45%;
+			padding-left: 15px;
+		}
+		.container .header h2{
+			display: inline-block;
+			width: 50%;
+			text-align: right;
+		}
+
+	.container .about{
+		width: 924.5px;
+		height: auto;
+	}
+		.container .about .im{
+			margin: 20px 0px 0px 20px;
+			width: 40%;
+			margin-top: -5px;
+		}
+			.container .about .im img{
+				display: inline-block;
+				float: left;
+				height: 240px; width: auto;
+				border: 4px solid grey;
+				margin: 0px 10px -5px 0px;
+			}
+		.container .about .info{	
+			width: 53.5%;
+			height: 248px;
+			display: block;
+			background: linear-gradient(-90deg, #FFFFFF, #EAEAEA);
+			margin: 20px 0px 20px 410px;
+
+		}
+			.container .about .info h1{
+				width: 98%;
+				height: 12%;
+				font-size: 20px;
+				color: white;
+				padding-top: 15px;
+				padding-left: 10px;
+				text-align: left;
+				margin-top: 0px;
+				background: linear-gradient(-180deg, #C3C0C8, #9F92AD, #8B8096, #9F92AD, #C3C0C8);
+			}
+			.container .about .info h2{
+				display: block;
+				width: 90%;
+				font-size: 14px;
+				text-align: left;
+				padding-left: 10px;
+				margin-top: -25px;
+			}
+	.container .links{
+		width: 924.5px;
+		height: auto;]
+	}
+		.container .links .Lamode{
+			display: inline-block;
+			width: 30%;
+			height: 50%;
+			margin: 20px 10px 20px 20px;
+			background: linear-gradient(-90deg, #FFFFFF, #EAEAEA);
+			align-content: left;
+		}
+
+			.container .links .Lamode h1{
+				margin: 0px 0px -5px 0px;
+				padding: 5px 0px 10px 10px;
+				font-size: 20px;
+				color: white;
+				height: 30px;
+				background: linear-gradient(-180deg, #C3C0C8, #9F92AD, #8B8096, #9F92AD, #C3C0C8);
+			}
+				.container .links .Lamode #Lm1 img{
+					height: 90%;
+					width: 99.5%;
+				}
+			.container .links .Lamode h2{
+				font-size: 14px;
+				padding: 0px 0px 53px 10px;
+			}
+				.container .links .Lamode #Lm2 img{
+					display: inline-block;
+					height: 40px;
+				}
+			.container .links .Lamode h3{
+				padding: 5px 0px 0px 10px;
+				height: 25px;
+				color: white;
+				background: linear-gradient(-180deg, #C3C0C8, #9F92AD, #8B8096, #9F92AD, #C3C0C8);
+			}
+			.container .links .Lamode h4{
+				text-align: center;
+				width: 75px;
+				margin-left: 80px;
+				border-radius: 5px;
+				color: white;
+				background: #1E432A;
+			}
+		.container .links .FamilyContacts{
+			display: inline-block;
+			width: 30%;
+			height: 50%;
+			margin: 20px 10px 20px 10px;
+			background: linear-gradient(-90deg, #FFFFFF, #EAEAEA);
+		}
+			.container .links .FamilyContacts h1{
+				margin: 0px 0px -5px 0px;
+				padding: 5px 0px 10px 10px;
+				font-size: 20px;
+				height: 30px;
+				color: white;
+				background: linear-gradient(-180deg, #C3C0C8, #9F92AD, #8B8096, #9F92AD, #C3C0C8);
+			}
+				.container .links .FamilyContacts #Fm1 img{
+					height: 90%;
+					width: 99.5%;
+				}
+			.container .links .FamilyContacts h2{
+				font-size: 14px;
+				padding: 0px 0px 36px 10px;
+			}
+				.container .links .FamilyContacts #Fm2 img{
+					display: inline-block;
+					height: 40px;
+				}
+			.container .links .FamilyContacts h3{
+				padding: 5px 0px 0px 10px;
+				height: 25px;
+				color: white;
+				background: linear-gradient(-180deg, #C3C0C8, #9F92AD, #8B8096, #9F92AD, #C3C0C8);
+			}
+			.container .links .FamilyContacts h4{
+				text-align: center;
+				width: 130px;
+				margin-left: 65px;
+				border-radius: 5px;
+				color: white;
+				background: #1E432A;
+			}
+		.container .links .fiveEleven{
+			display: inline-block;
+			width: 30%;
+			height: 50%;
+			margin: 20px 20px 20px 10px;
+			background: linear-gradient(-90deg, #FFFFFF, #EAEAEA);
+		}
+			.container .links .fiveEleven h1{
+				margin: 0px 0px 0px 0px;
+				padding: 5px 0px 7px 10px;
+				font-size: 20px;
+				height: 30px;
+				color: white;
+				background: linear-gradient(-180deg, #C3C0C8, #9F92AD, #8B8096, #9F92AD, #C3C0C8);
+			}
+				.container .links .fiveEleven #Fe1 img{
+					height: 90%;
+					width: 99.5%;
+				}
+			.container .links .fiveEleven h2{
+				font-size: 14px;
+				padding: 0px 0px 0px 10px;
+			}
+				.container .links .fiveEleven #Fe2 img{
+					display: inline-block;
+					height: 40px;
+				}
+			.container .links .fiveEleven h3{
+				padding: 5px 0px 0px 10px;
+				height: 25px;
+				color: white;
+				background: linear-gradient(-180deg, #C3C0C8, #9F92AD, #8B8096, #9F92AD, #C3C0C8);
+			}
+			.container .links .fiveEleven h4{
+				text-align: center;
+				width: 85px;
+				margin-left: 90px;
+				border-radius: 5px;
+				color: white;
+				background: #1E432A;
+			}
+	.container .footer{
+		width: 924.5px;
+		height: 70px;
+		text-align: center;
+		background-color: #D9D9D9;
+		vertical-align: text-top;
+		}
+		.container .footer .num{
+			margin-top: -15px;
+		}
+			.container .footer .pics u{
+			}
+			.container .footer .pics img{
+				height: 20px;
+			}`

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>G.O.T</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="GOT.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script>
+    $(document).ready(function(){
+		$("#first").on("click", function(){
+			console.log(this);
+			console.log($(this));
+			function displayOne(objectData) {
+				console.log(objectData);
+				$("#firstData").text(objectData.name)
+				$("#secondData").text(objectData.seats)
+				$("#thirdData").text(objectData.titles)
+			}
+			$.get("https://anapioficeandfire.com/api/houses/15", displayOne)
+		});
+
+		$("#second").on("click", function(){
+			console.log(this);
+			console.log($(this));
+			function displayTwo(objectData) {
+				console.log(objectData);
+				$("#firstData").text(objectData.name)
+				$("#secondData").text(objectData.words)
+				$("#thirdData").text(objectData.titles)
+			}
+			$.get("https://anapioficeandfire.com/api/houses/229", displayTwo)
+		});
+
+		$("#third").on("click", function(){
+			console.log(this);
+			console.log($(this));
+			function displayThree(objectData) {
+				console.log(objectData);
+				$("#firstData").text(objectData.name)
+				$("#secondData").text(objectData.words)
+				$("#thirdData").text(objectData.titles)
+			}
+			$.get("https://anapioficeandfire.com/api/houses/362", displayThree)
+		});
+
+		$("#fourth").on("click", function(){
+			console.log(this);
+			console.log($(this));
+			function displayFour(objectData) {
+				console.log(objectData);
+				$("#firstData").text(objectData.name)
+				$("#secondData").text(objectData.words)
+				$("#thirdData").text(objectData.titles)
+			}
+			$.get("https://anapioficeandfire.com/api/houses/378", displayFour)
+		});
+
+	});
+</script>
+</head>
+<body>
+<div class="contain">
+	<div class="houses">
+
+		<div id="one"><img id='first' src="baratheon.png" width="300" height="300"></div>
+		<div id="two"><img id='second' src="lannister.jpg" width="300" height="300"></div>
+		<div id="three"><img id='third' src="stark.jpg" width="300" height="300"></div>
+		<div id="four"><img id='fourth' src="targaryen.jpg" width="300" height="300"></div>
+
+	</div>
+	<div class="details">
+		<div>
+			<h1>House Details</h1>
+			<br>
+			<br>
+			<p>Name: <span id='firstData'></span> </p>
+			<br>
+			<p>Words: <span id='secondData'></span> </p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>Titles: <span id='thirdData'></span> </p>
+
+		</div>
+
+
+	</div>
+
+
+</div>
+</body>
+</html>

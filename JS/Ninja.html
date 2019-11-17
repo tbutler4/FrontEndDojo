@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ninja</title>
+	<script type="text/javascript">
+        //Parent Ninja class
+class Ninja {
+    constructor(name, health, speed, strength) {
+    this.name = name;
+    this.health = health;
+    this.speed = speed;
+    this.strength = strength;
+    }
+    sayName() {
+        console.log(`My ninja name is ${this.name}!`);
+    }
+    showStats() {
+        console.log(`Name: ${this.name}, Health: ${this.health}, Speed: ${this.speed}, Strength: ${this.strength}`);
+    }
+    drinkSake() {
+        this.health += 10
+        console.log(`${this.name} gained 10 health and is now at ${this.health}`);
+    }
+    punch(enemy) {
+        enemy.health -=  (5 * this.strength);
+        console.log(`${this.name} was punched by ${enemy.name} and lost 5 Health! ${enemy.health}`);
+    }
+    kick(enemy) {
+        enemy.health -= (15 * this.strength);
+        console.log(`${enemy.name}  was kicked by  ${this.name} and lost 15 Health! ${enemy.health}`);
+    }
+}
+            
+            // child Sensei class
+class Sensei extends Ninja {
+    constructor(name, health, speed, strength, wisdom) {
+        super(name, health, speed, strength);
+        this.health = 200;
+        this.strength = 10;
+        this.speed = 10;
+        this.wisdom = wisdom;
+    }
+    // new child function
+    speakWisdom() {
+        super.drinkSake();
+    }
+}
+
+const hyabusa = new Ninja(`Hyabusa`, 100, 3, 3);
+const redNinja = new Ninja(`RedNinja`, 100, 2.5, 5.5);
+const blueNinja = new Ninja(`BlueNinja`, 100, 6, 2);
+hyabusa.sayName();
+hyabusa.showStats();
+redNinja.punch(blueNinja);
+blueNinja.kick(redNinja);
+redNinja.drinkSake();
+console.log(hyabusa);
+console.log(redNinja);
+// example output
+const superSensei = new Sensei("Master Splinter");
+superSensei.speakWisdom();
+// -> "What one programmer can do in one month, two programmers can do in two months."
+superSensei.showStats();
+// -> "Name: Master Splinter, Health: 210, Speed: 10, Strength: 10"
+superSensei.drinkSake();
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+

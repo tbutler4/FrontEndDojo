@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="dojoquery.js"></script>
+    <style>
+        img {
+            vertical-align: top;
+        }
+        .hover {
+            /* background-color: black;
+            color: white; */
+            box-shadow: 4px 4px 4px grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shibes</h1>
+
+    <div id="target">loading shibes...</div>
+
+    <script>
+        let urls = [];
+        $.get("https://cors.io/?http://shibe.online/api/shibes?count=10", function(response){
+            urls = response;
+            drawShibes(response);
+        }, "json");
+        function drawShibes(urls){
+            console.log(urls);
+            let s = "";
+            for(let url of urls){
+                s += `<img src="${url}" alt="shiba inu" width="300px">`;
+            }
+            $("#target").html(s);
+        }
+        // window.setTimeout(function(){
+        //     drawShibes(urls)
+        // }, 2000);
+        
+    </script>
+
+    <button id="btn">I am a button</button>
+
+    <script>
+        $dojo("#btn").click( function(){
+            console.log("hello");
+        });
+        $dojo("#btn").hover(function(){
+            console.log(1);
+            $dojo("#btn").addClass("hover");
+        }, function(){
+            console.log(2);
+            $dojo("#btn").removeClass("hover");
+        });
+    </script>
+
+</body>
+</html>

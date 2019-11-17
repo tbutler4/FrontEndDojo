@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deck O Cards</title>
+	<script type="text/javascript">
+class Card {
+    constructor(suit, string, numValue) {
+    const suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
+    const values = ['Ace', "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", 'Jack', 'Queen', 'King'];
+    const numVal = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    this.suit = suit;
+    this.string = string;
+    this.numValue = numValue;
+    }
+    show() {
+    	console.log(`${this.suit}, ${this.string}, ${this.numValue}`)
+    }
+}
+class Deck{
+  constructor(){
+    this.deck = [];
+    this.reset();
+    this.shuffle();
+  }
+
+
+  shuffle(){
+    const { deck } = this;
+    let m = deck.length, i;
+
+    while(m){
+      i = Math.floor(Math.random() * m--);
+
+      [deck[m], deck[i]] = [deck[i], deck[m]];
+    }
+
+    return this;
+  }
+
+  reset(){
+    this.deck = [];
+
+    const suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
+    const values = ['Ace', "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", 'Jack', 'Queen', 'King'];
+    const numVal = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+    for (let suit in suits) {
+      for (let value in values) {
+        console.log(value)
+        // this.deck.push(`${values[value]} of ${suits[suit]}`);
+        this.deck.push(new Card(suits[suit], values[value], parseInt(value) + 1))
+      }
+    }
+  }
+
+  deal(){
+    return this.deck.pop();
+  }
+}
+
+const deck1 = new Deck();
+console.log(deck1.deck);
+deck1.reset();
+console.log(deck1.deck);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

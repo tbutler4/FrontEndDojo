@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>trivia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dummy.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#one").on("click", function(){
+          $("#one").hide();
+            console.log(this);
+            console.log($(this));
+            function displayOne(objectData) {
+              console.log(objectData);
+
+              $("#firstData").text(objectData.catagory.sports.question)
+            }
+            $.get("https://opentdb.com/api.php?amount=10&type=multiple", displayOne)
+          });
+
+  });
+</script>
+<head>
+<body>
+  <div class="container">
+
+  	<div class="top">
+  		<div class="topped">ESkettit
+  		</div>
+  		<div class="topper">Trivia Time
+  		</div>
+  		<div class="toppo">{Points} <span id='points'></span>
+  		</div>
+
+  	</div>
+
+
+  	<div class="middle">
+  		<div class="my">Catagory 1
+  		</div>
+  		<div class="center">Catagory 2
+  		</div>
+  		<div class="thing">Catagory 3
+  		</div>
+
+  	</div>
+
+
+  	<div class="question">
+  		<div class="these">
+        <img id="one" src="crashy.png"><span id='firstData'></span> 
+        <img id="two" src="crashy.png"><span id='secondData'></span> 
+        <img id="three" src="crashy.png"><span id='thirdData'></span> 
+      </div>
+      <div class="are">
+        <img id="four" src="crashy.png"><span id='fourthData'></span> 
+        <img id="five" src="crashy.png"><span id='fifthData'></span> 
+        <img id="six" src="crashy.png"><span id='sixthData'></span> 
+      </div>
+      <div class="questions">
+        <img id="seven" src="crashy.png"><span id='seventhData'></span> 
+        <img id="eight" src="crashy.png"><span id='eighthData'></span> 
+        <img id="nine" src="crashy.png"><span id='ninthData'></span> 
+      </div>
+
+  	</div>
+
+  </div>
+  <div class="myquestions">
+    <h1>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </h1>
+
+
+  </div>
+    <script src="dummy.js" type="text/javascript"></script>
+</body>
+</html>

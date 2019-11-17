@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    outline: 1px solid gold;
+}
+.container{
+    width: 1200px;
+    height: 700px;
+}
+.houses #one{
+	display: inline-block;
+	margin-right: 125px;
+	margin-left: 200px;
+}
+.houses #two{
+	display: inline-block;
+	margin-right: 125px;
+}
+.houses #three{
+	display: inline-block;
+	margin-right: 125px;
+}
+.houses #four{
+	display: inline-block;
+}
+.details{
+	margin-top: 100px;
+	width: 1000px;
+	height: auto;
+	margin-left: 500px;
+}
+p{
+	font-size: 30px;
+}
